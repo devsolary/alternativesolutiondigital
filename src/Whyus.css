@@ -1,0 +1,46 @@
+.Pricing {
+    background-image: url(imgs/Homebg.png);
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    width: 100vw;
+}
+
+.price {
+    margin-top: 20vh;
+    color: white;
+    margin-left: 25vw;
+    margin-bottom: 20vh;
+    width: 50vw;
+    background-color: rgb(27, 27, 30, 1);
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.price.slide-inprice {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.price h1 {
+    font-size: 30px;
+}
+
+.price p {
+    font-size: 15px;
+}
+
+.price p ul li {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .price {
+        width: 70vw;
+        margin-left: 12vw;
+    }
+}

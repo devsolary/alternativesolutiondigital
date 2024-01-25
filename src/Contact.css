@@ -1,0 +1,119 @@
+.Contact {
+    background-image: url(imgs/Homebg.png);
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 0 ;
+    position: absolute;
+}
+
+.contactUs {
+    margin-top: 25vh;
+    margin-left: 50px;
+    margin-right: auto;
+    background-color: rgb(45, 24, 24);
+    height: 30vh;
+    padding: 20px;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.contactUs.slide-incontactUs {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.contactUs h2 {
+    color: white;
+}
+
+.contactUs p {
+    color: white;
+}
+
+.subForm {
+    margin-top: 25vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: black;
+    height: 30vh;
+    padding: 20px;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.subForm h3 {
+    color: white;
+}
+
+.subForm.slide-insubForm {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.subForm input {
+    height: 28px;
+    margin-right: 5px;
+    margin-top: 5px;
+    outline-style: none;
+}
+
+.subForm button {
+    margin-top: 8px;
+    color: black;
+    padding: 5px;
+    border-radius: 2px;
+    width: 415px;
+    background-color: rgb(248, 244, 244);
+    border: none;
+}
+
+.subForm button {
+    transition: all ease-in-out 1s;
+}
+
+.subForm button:hover {
+    background-color: rgb(54, 48, 48);
+    box-shadow: 3px 3px 5px rgb(220, 213, 213);
+    color: white;
+}
+
+.subForm .email {
+    margin-top: 0;
+    width: 407px;
+}
+
+@media screen and (max-width: 768px) {
+    .Contact {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Contact .contactUs {
+        width: 80vw;
+        margin-left: 5vw;
+    }
+
+    .Contact .subForm {
+        margin-top: 10px;
+        width: 80vw;
+        margin-left: 5vw;
+    }
+
+    .Contact .subForm form input {
+        width: 78vw;
+    }
+
+    .Contact .subForm form button {
+        width: 80px;
+    }
+
+}

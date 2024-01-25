@@ -1,0 +1,155 @@
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: hidden;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    position: absolute;
+    height: 80px;
+    z-index: 10;
+    margin: 0;
+    transition: all 2s ease-in-out;
+}
+
+.hidden {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: hidden;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    position: absolute;
+    height: 80px;
+    z-index: 10;
+    margin: 0;
+    transition: all 2s ease-in-out;
+
+}
+
+
+.navMobile {
+    display: none;
+}
+
+.openBar {
+    display: none;
+}
+
+.closeBar {
+    display: none;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.openbar {
+    display: none;
+}
+
+.closeBar {
+    display: none;
+}
+
+.logo h3 {
+    color: white;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-top: 35px;
+    list-style: none;
+}
+.nav ul li {
+    margin-right: 50px;
+    text-decoration: none;
+}
+.nav ul li .link {
+    text-decoration: none;
+    color: white;
+}
+.nav ul li .link:hover {
+    color: gray;
+}
+
+@media screen and (max-width:768px) {
+    .Navbar {
+        position: absolute;
+        color: black;
+        z-index: 10;
+        height: 7vh;
+        transition: all 0.6s ease-in;
+    }
+    .logo h3 {
+        font-size: 10px;
+        
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .openBar {
+        display: block;
+        position: absolute;
+        height: 50px;
+        right: 1px;
+        top: 0;
+        width: 40px;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+
+    .closeBar {
+        display: block;
+        position: absolute;
+        height: 50px;
+        right: 1px;
+        top: 0;
+        width: 40px;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+
+    .Navbar .navMobile {
+        position: fixed;
+        z-index: 10;
+        float: right;
+        display: flex;
+        background-color: black;
+        right: 0;
+        margin-top: 7vh;
+        padding-bottom: 20px;
+        width: 40vw;
+        transition: all 1s ease-in-out;
+    }
+
+    .Navbar .navMobile ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        position: relative;
+        z-index: 20;
+        transition: all ease-in-out 2s;
+    }
+
+    .Navbar .navMobile ul li {
+        margin-top: 15px;
+        z-index: 1;
+    }
+
+    .Navbar .navMobile ul li .link {
+        text-decoration: none;
+        color: white;
+    }
+}

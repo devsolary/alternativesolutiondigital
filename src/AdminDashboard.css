@@ -1,0 +1,107 @@
+.AdminDashboard {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./imgs/Homebg.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+    z-index: 11;
+    position: absolute;
+    overflow-y: scroll;
+}
+
+.AdminDashboard .addNewSubscriber {
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(226, 214, 214);
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    width: 110px;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: auto;
+}
+.subscribers {
+    margin-top: 5vh;
+    margin-left: 20px;
+}
+
+.subscribers .label {
+    border: 2px solid black;
+    width: 90vw;
+    margin-left: 3vw;
+}
+
+.subscribers .label span {
+    border-right: 1px solid black;
+}
+
+.subscribers .label .emailAdd {
+    padding-right: 28vw;
+    font-weight: 700;
+}
+
+.subscribers .label .phoneNo {
+    padding-right: 12vw;
+    font-weight: 700;
+}
+
+.subscribers .label .name {
+    border-right: none;
+    font-weight: 700;
+}
+
+.subscribers ul {
+    width: 100%;
+    margin-top: 0;
+}
+
+.subscribers ul li {
+    list-style: none;
+    width: 90vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+
+}
+.subscribers ul li .sn {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.subscribers ul li .emailAdd {
+    position: absolute;
+    font-weight: 600;
+}
+
+.subscribers ul li .phoneNo {
+    position: absolute;
+    margin-left: 37vw;
+    font-weight: 600;
+}
+
+.subscribers ul li .name {
+    position: absolute;
+    margin-left: 55vw;
+    font-weight: 600;
+}
+
+.subscribers ul li .delBtn {
+    position: absolute;
+    margin-left: 83vw;
+    font-weight: 500;
+    border: none;
+    color: rgb(5, 4, 4);
+    transition: all ease-in-out 500ms;
+    padding: 3px;
+    border-radius: 3px;
+    width: 70px;
+
+}
+
+.subscribers ul li .delBtn:hover {
+    background-color: red;
+    color: rgb(10, 9, 9);
+}
