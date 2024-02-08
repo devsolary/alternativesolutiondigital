@@ -23,9 +23,6 @@ function About() {
         }
       }
     }
-
-    
-
     if (divRef.current) {
       divRef.current.addEventListener("scroll", handleScroll)
     }
@@ -94,7 +91,12 @@ function About() {
                       <br />
                         At ASD Marketing, we use the most cost effective advertising methods to get your business to the next level.</p>
                 </div>
-                
+                <div className="service" style={{backgroundColor: "rgb(106, 99, 99)"}}> 
+                    <h2>E-commerce management</h2>
+                    <p>We at ASD Marketing have the expertise to effectively manage your E-commerce business or website,
+                      bringing about great value and exponential growth to your business<br />
+                        .</p>
+                </div>
             </div>
         </div>
 
@@ -103,5 +105,4 @@ function About() {
     </>
   )
 }
-
 export default About

@@ -5,6 +5,7 @@ import { addDoc, collection} from "firebase/firestore";
 import { db } from './firebase';
 import img1 from "./imgs/Homeimg1.jpg"
 import img2 from "./imgs/Homeimg2.jpg"
+import logo from "./imgs/asd-logo.jpg"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
@@ -29,7 +30,6 @@ function Home() {
         }
       }
     }
-
 
     if (divRef.current) {
       divRef.current.addEventListener("scroll", handleScroll)
@@ -87,10 +87,12 @@ function Home() {
     <>
  
     <div className='Home' ref={divRef}>
-      <div className="homeContent"><div className='content'> <h2 className={showText ? "slide-inh2" : ""}>Alternative Solutions Digital</h2>
+      <div className="homeContent"><div className='content'>
+
+         <h2 className={showText ? "slide-inh2" : ""}>Alternative Solutions Digital</h2>
         <p className={showText ? "slide-inp" : ""}>An alternative you can trust</p></div> 
-        
-      
+        <img src={logo} alt="" className={`logo ${showText ? "slide-inlogo" : ""}`}/>
+     
       </div>
       <div className="aboutUs">
             <header  className={showText ? "slide-inheader" : ""}>
@@ -132,7 +134,12 @@ function Home() {
                       <br />
                       At ASD Marketing, we use the most cost effective advertising methods to get your business to the next level.</p>
                 </div>
-                
+                <div className="service" style={{backgroundColor: "rgb(68, 55, 55)"}}> 
+                    <h2>E-commerce management</h2>
+                    <p>We at ASD Marketing have the expertise to effectively manage your E-commerce business or website,
+                      bringing about great value and exponential growth to your business<br />
+                        .</p>
+                </div>
             </div>
         </div>
         <div className="contactUs">
@@ -144,7 +151,6 @@ function Home() {
             <p>Whatsapp <FontAwesomeIcon icon={faWhatsapp} />: +234 8160645981</p>
           </div>
             
-
             <img src={img1} alt="" className='img1' />
         </div>
         <div className='formSec'>

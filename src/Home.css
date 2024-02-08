@@ -15,7 +15,7 @@
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
-}
+} 
 
 .homeContent {
     z-index: -1;
@@ -33,13 +33,32 @@
     font-size: 50px;
     color: white;
     margin-bottom: 0;
-    margin-left: 20vw;
+    margin-left: 30vw;
     position: absolute;
-    margin-top: 150px;
+    margin-top: 40vh;
     opacity: 0;
     transform: scale(0);
     transition:  opacity 1s ease-in-out, transform 1s ease-in-out;
 }
+
+.homeContent .logo {
+    margin-top: 30vh;
+    margin-left: 10vw;
+    height: 30vh;
+    width: 30vh;
+    z-index: 10;
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    transition:  opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.homeContent .slide-inlogo {
+    opacity: 1;
+    transform: scale(1);
+
+}
+
 .homeContent .slide-inh2 {
     opacity: 1;
     transform: scale(1);
@@ -47,11 +66,12 @@
 }
 
 
+
 .homeContent p {
     color: white;
-    margin-left: 20vw;
+    margin-left: 30vw;
     position: absolute;
-    margin-top: 210px;
+    margin-top: 48vh;
     opacity: 0;
     transform: scale(0);
     transition:  opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
@@ -189,12 +209,28 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
     .Home {
         overflow-x: hidden;
     }
+
+    .homeContent .logo {
+        margin-top: 20vh;
+        width: 50vw;
+        margin-left: 25vw;
+    }
+
     .homeContent h2{
-        font-size: 30px;
+        font-size: 22px;
+        margin-left: 20vw;
+        width: 90vw;
+        margin-top: 53vh;
+    }
+
+    .homeContent p {
+        margin-left: 20vw;
+        margin-top: 57vh;
+
     }
 
     .Home .aboutUs {
@@ -311,5 +347,6 @@
         color: inherit;
     }
     
+
 
 }
