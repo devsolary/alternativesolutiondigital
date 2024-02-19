@@ -21,6 +21,7 @@
     margin-right: 30vw;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 
 .addSubscriberForm form input {
@@ -50,4 +51,32 @@
 .addSubscriberForm form .email {
     margin-top: 0;
     width: 407px;
+}
+
+@media screen and (max-width:989px) {
+
+    .AddSubscriber {
+        overflow-x: hidden;
+        padding-left: 0;
+    }
+    .addSubscriberForm form {
+        width: 80%;
+        margin-left: 5%;
+        height: 160px;
+    }
+
+    .addSubscriberForm form input {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .addSubscriberForm form .email {
+        margin-top: 5px;
+        width: 265px;
+    }
+
+    .addSubscriberForm form button  {
+        width: 70px;
+        margin-left: 10%;
+    }
 }

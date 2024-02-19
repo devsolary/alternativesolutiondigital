@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import "./Whyus.css"
 import { useState, useEffect } from 'react'
 import Navbar from './Navbar'
+import Footer from "./Footer"
 
 function Whyus() {
 
@@ -92,6 +93,9 @@ function Whyus() {
             </ul>
             </p>
         </div>
+        <footer>
+          <Footer />
+        </footer>
     </div>
     <Navbar isNavbarVisible={isNavbarVisible } />
     </>

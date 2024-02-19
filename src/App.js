@@ -11,6 +11,8 @@ import AdminDashboard from './AdminDashboard.js';
 import { AuthContext } from "./AuthContext.js"
 import { useContext } from 'react';
 import AddSubscriber from './AddSubscriber.js';
+import NotFound from './NotFound.jsx';
+
 
 function App() {
 
@@ -38,6 +40,7 @@ function App() {
         <Route path="/AdminLogin" element={<AdminLogin />} />
         <Route path="/AdminDashboard" element={<RequireAuth><AdminDashboard /></RequireAuth> } />
         <Route path="/AddSubscriber" element={<RequireAuth><AddSubscriber /></RequireAuth>} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       </div>
     </Router>

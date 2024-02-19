@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import "./Contact.css"
+import Footer from "./Footer"
 import { useState, useEffect } from 'react'
 import { addDoc, collection} from "firebase/firestore"; 
 import { db } from './firebase';
@@ -84,6 +85,7 @@ function Contact() {
   return (
     <>
     <div className='Contact' ref={divRef}>
+      <div className='contactWrapper'>
         <div className={`contactUs ${isSlideIn ? "slide-incontactUs" : ""}`}>
             <h2>Contact us</h2>
             <p>Email <FontAwesomeIcon icon={faEnvelope} />: alternativesolutiondigital@gmail.com</p>
@@ -99,11 +101,14 @@ function Contact() {
                 <br />
                 <input type="email" placeholder='Your Email Address' value={email} className='email' onChange={(e)=> setEmail(e.target.value)}/>
                 <br />
-                
                 <button type='submit'> Submit</button> <br />
                 {submitStatus && <span style={{color: "white"}}>Thank you we have receive your informations</span> }
             </form>
         </div>
+        </div>
+        <footer>
+          <Footer />
+        </footer>
     </div>
     <Navbar isNavbarVisible={isNavbarVisible} />
     </>

@@ -1,10 +1,12 @@
 .Support {
     background-image: url(imgs/Homebg.png);
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     overflow-y: hidden;
     position: absolute;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .supportCont {
@@ -36,6 +38,10 @@
 .supportCont .links ul li a {
     text-decoration: none;
     color: inherit;
+}
+
+.footer {
+    margin-top: auto;
 }
 
 @media screen and (max-width: 768px) {

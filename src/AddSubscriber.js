@@ -25,9 +25,8 @@ function AddSubscriber() {
     }catch(err){
       console.log(err)
     }
- 
-
   }
+  
   return (
     <div className='AddSubscriber'>
         <div className="addSubscriberForm">

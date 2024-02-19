@@ -45,7 +45,7 @@ function AdminLogin() {
           <input type="password" placeholder='password' onChange={e => setPassword(e.target.value)}/>
         </label> <br />
         <button type='submit'>Login</button> <br />
-        {error && <span>Wrong email or password!</span>}
+        {error && <span style={{color:"red"}}>Wrong email or password!</span>}
       </form>
       </div>
       

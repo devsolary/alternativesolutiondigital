@@ -2,6 +2,7 @@
     background-image: url(imgs/Homebg.png);
     background-size: cover;
     height: 100%;
+    width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
     position: absolute;

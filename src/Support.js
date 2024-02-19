@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import "./Support.css"
 import Navbar from './Navbar'
+import Footer from "./Footer"
 import { useState, useEffect } from 'react'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -65,6 +66,9 @@ function Support() {
             <li><a href="https://wa.link.vr8a2j" target='_blank' rel='noopener noreferrer'>Whatsapp &#160;<FontAwesomeIcon icon={faWhatsapp} /></a></li>
           </ul>
         </div>
+      </div>
+      <div className='footer'>
+      <Footer />
       </div>
     </div>
     <Navbar isNavbarVisible={isNavbarVisible} />

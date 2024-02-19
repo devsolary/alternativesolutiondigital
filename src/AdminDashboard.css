@@ -105,3 +105,41 @@
     background-color: red;
     color: rgb(10, 9, 9);
 }
+
+@media screen and (max-width:989px) {
+    .AdminDashboard {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .subscribers .label {
+        width: 150%;
+    }
+
+    .subscribers .label {
+        margin-left: 10vw;
+    }
+
+    .subscribers ul {
+        width: 100%;
+    }
+
+    .subscribers ul li {
+        width: 150%;
+    }
+
+    .subscribers ul li .phoneNo {
+        margin-left: 58%;
+    }
+
+    .subscribers ul li .name {
+        margin-left: 90%;
+    }
+
+    .subscribers ul li .delBtn {
+        margin-left: 120%;
+    }
+
+    
+
+}

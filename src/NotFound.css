@@ -1,0 +1,43 @@
+.NotFound {
+    background-image: url(imgs/Homebg.png);
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+}
+
+.NotFound::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.NotFound  div {
+    position: absolute;
+    margin-left: 30vw;
+    margin-top: 30vh;
+    z-index: 10;
+}
+
+.NotFound div h1 {
+    color: white;
+}
+
+.NotFound div p {
+    color: white;
+}
+
+@media screen and (max-width:989px) {
+    .NotFound  div {
+        margin-left: 20px;
+    }
+}
+

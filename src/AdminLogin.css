@@ -7,6 +7,7 @@
     position: absolute;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .loginForm {
@@ -43,4 +44,15 @@
     margin: 8px 0 8px 0;
     height: 30px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 989px) {
+    .loginForm {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .loginForm input {
+        width: 60vw;
+    }
 }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import "./Home.css"
+import Footer from './Footer';
 import Navbar from './Navbar';
 import { addDoc, collection} from "firebase/firestore"; 
 import { db } from './firebase';
@@ -11,6 +12,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 library.add(faEnvelope, faFacebook, faInstagram, faWhatsapp)
+
 
 function Home() {
 
@@ -225,6 +227,9 @@ function Home() {
           </ul>
         </div>
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
     <Navbar isNavbarVisible={isNavbarVisible} />
     </>
